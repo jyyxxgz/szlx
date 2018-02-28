@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.chaychan.lx.widget.banner.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:bannerPageAlpha="1.0"
+        app:bannerPageMargin="8dp"
+        app:bannerPagePercent="1"
+        app:bannerPageScale="1"
+        app:bannerAnimScroll="true"
+        app:bannerAutoScroll="true"
+        app:bannerScrollDuration="4000"
+        app:bannerAnimDuration="1500" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="240px"
+        android:layout_marginTop="10px"
+        android:gravity="center">
+        <include
+            android:id="@+id/banner_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/head_item_banner"/>
+        <include
+            android:id="@+id/banner_parse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/head_item_banner"/>
+        <include
+            android:id="@+id/banner_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/head_item_banner"/>
+        <include
+            android:id="@+id/banner_agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/head_item_banner"/>
+    </LinearLayout>
+</LinearLayout>
